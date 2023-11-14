@@ -22,9 +22,51 @@
         <p>Free Energy: </p><input type="text" class="freeEnergy" placeholder="Enter your current amount of free energy (i.e 4)">
         <p>Enter Gems: </p><input type="text" class="gems" placeholder="Enter the amount of gems you will spend">
 
+        <p>Type of attack: </p>
+        <ul>
+            <li>Regular<input type="radio" name="select" class="regular"></li>
+            <li>PA<input type="radio" name="select" class="pa"></li>
+            <li>PA until elixr empty<input type="radio" name="select" class="paElixr"></li>
+        </ul>
+
+        <div>
+            <h3>Enter the amount of Elixr you wish to use: </h3>
+            <div>
+                <p>Common Elixr:</p>
+                <input type="number" class="step" value= '0'>
+                <button onclick="increment()">+</button>
+                <button onclick="decrement()">-</button>
+            </div>
+            <div>
+                <p>Uncommon Elixr:</p>
+                <input type="number" class="step" value= '0'>
+                <button onclick="increment()">+</button>
+                <button onclick="decrement()">-</button>
+            </div>
+            <div>
+                <p>Rare Elixr:</p>
+                <input type="number" class="step" value= '0'>
+                <button onclick="increment()">+</button>
+                <button onclick="decrement()">-</button>
+            </div>
+            <div>
+                <p>Legendary I Elixr:</p>
+                <input type="number" class="step" value= '0'>
+                <button onclick="increment()">+</button>
+                <button onclick="decrement()">-</button>
+            </div>
+        </div>
+
         <button class="enterButton">Enter</button>
 
-        <p class="totalPoints">War Points: </p>
+
+
+        <div class="soon">
+            <p class="totalPoints">War Points: </p>
+            <p class="totalAttacks"></p>
+            <p class=""></p>
+        </div>
+        
     </div>
 
 
